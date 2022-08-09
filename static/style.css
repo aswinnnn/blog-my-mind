@@ -1,0 +1,90 @@
+@font-face {
+  font-family: BlogFont;
+  src: url(coopforged.ttf);
+}
+
+@font-face {
+  font-family: FleshNBlood;
+  src: url(flesh.ttf);
+}
+
+@font-face {
+  font-family: para;
+  src: url(/static/micross.ttf);
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  background-color: rgb(123, 235, 255);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  text-decoration: none;
+  color: hotpink;
+}
+
+.heading {
+  /* top: 90%;
+  margin: auto; */
+  text-align: center;
+  font-family: FleshNBlood, 'Franklin Gothic Medium';
+  font-size: 48px;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+}
+.catalog {
+  text-align: center;
+  z-index: 2;
+  color: rgb(80, 0, 133);
+}
+.blogpost {
+  font-family: BlogFont, 'Gill Sans';
+  font-weight: 900;
+  font-size: 20px;
+  /* margin: auto;
+  width: 640px;
+  height: max-content; */
+  text-align: center;
+  background-color: rgb(149, 195, 255);
+  position: absolute;
+  left: 50%;
+  top: 92%;
+  transform: translate(-50%, -50%);
+  border: black;
+  border-style: dotted;
+  z-index: 3;
+}
+
+.datetime {
+  text-align: left;
+  font-size: 22;
+  text-decoration: underline;
+  text-decoration: solid;
+}
+
+.blog-text {
+  font-family: para, 'Times New Roman';
+  font-weight: 900;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 660px) {
+
+  .heading {
+    font-size: 20px;
+  }
+
+  .blogpost {
+    width: 360px;
+  }
+  
+}
